@@ -556,261 +556,322 @@
     </style>
 </head>
 <body>
-    <!-- Hero Section con Carrusel -->
     <section class="hero">
         <div class="carousel">
-            <img class="carousel-img active" src="assets/izta.jpg" alt="Cascada">
-            <img class="carousel-img" src="assets/bosque.jpg" alt="Camping">
-            <img class="carousel-img" src="assets/diamantes.jpg" alt="Senderismo">
-            <img class="carousel-img" src="assets/nexco.jpg" alt="Fogata">
-            <img class="carousel-img" src="assets/izta2.jpg" alt="Naturaleza">
+            <img class="carousel-img active" src="assets/izta.jpg" alt="Naturaleza">
+            <img class="carousel-img" src="assets/bosque.jpg" alt="Bosque">
+            <img class="carousel-img" src="assets/diamantes.jpg" alt="Cascada">
             <img class="carousel-img" src="assets/dosaguas.jpg" alt="Montañas">
         </div>
         <div class="hero-overlay">
-            <h1 class="hero-title">🏔️ DOS AGUAS 🔥</h1>
-            <p class="hero-subtitle">La aventura está cabrona, ¿te la vas a perder?</p>
-            <div class="hero-date">📅 Jueves 18 de Diciembre 2025</div>
+            <h1 class="hero-title">🏔️ DOS AGUAS 🌸</h1>
+            <p class="hero-subtitle" style="font-size:1.5rem; margin-top:10px;">
+                ✨ ¿Vienes al cumple de Monse? ✨
+            </p>
+            <div class="hero-date">📅 28 y 29 de Marzo 2026</div>
         </div>
     </section>
 
-    <!-- Actividades -->
     <section class="section activities">
-        <h2 class="section-title">¿Qué pedo con el plan? 🤔</h2>
+        <h2 class="section-title">Caele al Monse Fest</h2>
         <p style="text-align: center; font-size: 1.2rem; margin-bottom: 30px;">
-            Wey, este viaje está de huevos. Aquí te va lo que nos espera:
+            Naturaleza, caminatas y momentos especiales para compartir juntos.
         </p>
         
         <div class="activity-grid">
-            <div class="activity-card activity-with-image">
-                <img src="" alt="Senderismo" class="activity-image" onclick="document.getElementById('img-senderismo').click()">
-                <input type="file" id="img-senderismo" accept="image/*" style="display:none" onchange="loadImage(this, 0)">
+            <div class="activity-card">
                 <div class="activity-icon">🥾</div>
-                <h3 class="activity-title">Senderismo Épico</h3>
-                <p class="activity-desc">A darle duro por los senderos, no seas huevón</p>
-            </div>
-            
-            <div class="activity-card activity-with-image">
-                <img src="" alt="Camping" class="activity-image" onclick="document.getElementById('img-camping').click()">
-                <input type="file" id="img-camping" accept="image/*" style="display:none" onchange="loadImage(this, 1)">
-                <div class="activity-icon">🏕️</div>
-                <h3 class="activity-title">Camping Chingón</h3>
-                <p class="activity-desc">A dormir bajo las estrellas con fogata incluida</p>
-            </div>
-            
-            <div class="activity-card activity-with-image">
-                <img src="" alt="Puentes" class="activity-image" onclick="document.getElementById('img-puentes').click()">
-                <input type="file" id="img-puentes" accept="image/*" style="display:none" onchange="loadImage(this, 2)">
-                <div class="activity-icon">🌉</div>
-                <h3 class="activity-title">Puentes Colgantes</h3>
-                <p class="activity-desc">Para los que no le tienen miedo a las alturas</p>
-            </div>
-            
-            <div class="activity-card activity-with-image">
-                <img src="" alt="Granja" class="activity-image" onclick="document.getElementById('img-granja').click()">
-                <input type="file" id="img-granja" accept="image/*" style="display:none" onchange="loadImage(this, 3)">
-                <div class="activity-icon">🦌</div>
-                <h3 class="activity-title">Granja de Venados</h3>
-                <p class="activity-desc">A conocer a los venaditos, están bien bonitos</p>
+                <h3 class="activity-title">Senderismo</h3>
+                <p class="activity-desc">Recorridos por senderos naturales con vistas increíbles.</p>
             </div>
             
             <div class="activity-card">
-                <div class="activity-icon">🎧</div>
-                <h3 class="activity-title">DJ Tapia en Vivo</h3>
-                <p class="activity-desc">El compa Tapia nos pone a prender en Nexcolanco con su set</p>
+                <div class="activity-icon">🏕️</div>
+                <h3 class="activity-title">Camping</h3>
+                <p class="activity-desc">Una noche tranquila bajo las estrellas.</p>
+            </div>
+            
+            <div class="activity-card">
+                <div class="activity-icon">🌉</div>
+                <h3 class="activity-title">Puentes Colgantes</h3>
+                <p class="activity-desc">Una experiencia emocionante y segura para todos.</p>
+            </div>
+
+            <div class="activity-card">
+                <div class="activity-icon">🦌</div>
+                <h3 class="activity-title">Granja de Venados</h3>
+                <p class="activity-desc">Un espacio ideal para convivir con la fauna local.</p>
             </div>
         </div>
 
-        <h3 style="font-size: 2rem; margin-top: 50px; text-align: center; margin-bottom: 30px;">🗺️ Puntos de Interés del Senderismo</h3>
+        <h3 style="font-size: 2rem; margin-top: 50px; text-align: center; margin-bottom: 30px;">
+            🗺️ Lugares que visitaremos
+        </h3>
+
         <div class="points-grid">
-            <div class="point-card" onclick="document.getElementById('img-diamantes').click()">
+            <div class="point-card">
                 <img src="assets/diamantes.jpg" alt="Cascada Diamantes" class="point-image">
-                <input type="file" id="img-diamantes" accept="image/*" style="display:none" onchange="loadPointImage(this, 0)">
                 <div class="point-icon">💎</div>
                 <h4 class="point-title">Cascada Diamantes</h4>
-                <p class="point-desc">Esta cascada brilla con la luz del sol, es un espectáculo que tienes que ver. Perfecta para las fotos más chingonas.</p>
+                <p class="point-desc">Una caída de agua impresionante rodeada de vegetación.</p>
             </div>
-            
-            <div class="point-card" onclick="document.getElementById('img-negro').click()">
+
+            <div class="point-card">
                 <img src="assets/negro.png" alt="Cascada del Negro" class="point-image">
-                <input type="file" id="img-negro" accept="image/*" style="display:none" onchange="loadPointImage(this, 1)">
                 <div class="point-icon">🖤</div>
                 <h4 class="point-title">Cascada del Negro</h4>
-                <p class="point-desc">El agua cae con una fuerza brutal, te va a dejar con la boca abierta.</p>
+                <p class="point-desc">Una de las cascadas más impactantes del recorrido.</p>
             </div>
-            
-            <div class="point-card" onclick="document.getElementById('img-congelada').click()">
-                <img src="assets/frozen.jpg" alt="Cascada Congelada" class="point-image">
-                <input type="file" id="img-congelada" accept="image/*" style="display:none" onchange="loadPointImage(this, 2)">
-                <div class="point-icon">❄️</div>
-                <h4 class="point-title">Cascada Congelada</h4>
-                <p class="point-desc">En diciembre se pone épica, con estalactitas de hielo colgando. Es como estar en Narnia pero mexicano.</p>
+
+            <div class="point-card">
+                <img src="assets/cueva.jpg" alt="Cueva del Diablo" class="point-image">
+                <div class="point-icon">🕳️</div>
+                <h4 class="point-title">Cueva del Diablo</h4>
+                <p class="point-desc">Un sitio natural con un toque de misterio e historia.</p>
             </div>
-            
-            <div class="point-card" onclick="document.getElementById('img-mirador').click()">
-                <img src="assets/mirador.jpg" alt="Mirador" class="point-image">
-                <input type="file" id="img-mirador" accept="image/*" style="display:none" onchange="loadPointImage(this, 3)">
-                <div class="point-icon">👁️</div>
-                <h4 class="point-title">Mirador</h4>
-                <p class="point-desc">La vista desde aquí está de poca madre. Ves todo el valle y las montañas. Vale la pena la subida, créeme.</p>
-            </div>
-            
-            <div class="point-card" onclick="document.getElementById('img-nexcolanco').click()">
-                <img src="assets/nexco2.jpg" alt="Nexcolanco" class="point-image">
-                <input type="file" id="img-nexcolanco" accept="image/*" style="display:none" onchange="loadPointImage(this, 4)">
-                <div class="point-icon">🎵</div>
-                <h4 class="point-title">Nexcolanco</h4>
-                <p class="point-desc">Aquí es donde el DJ Tapia arma la fiesta. Un claro rodeado de árboles perfecto para el reventón nocturno.</p>
-            </div>
-            
-            <div class="point-card" onclick="document.getElementById('img-nahualac').click()">
-                <img src="assets/nahaualac.jpg" alt="Laguna de Nahualac" class="point-image">
-                <input type="file" id="img-nahualac" accept="image/*" style="display:none" onchange="loadPointImage(this, 5)">
+
+            <div class="point-card">
+                <img src="assets/escondida.jpg" alt="Cascada Escondida" class="point-image">
                 <div class="point-icon">🌊</div>
-                <h4 class="point-title">Laguna de Nahualac</h4>
-                <p class="point-desc">Una laguna misteriosa y tranquila. El lugar perfecto para relajarte y conectar con la naturaleza después de la caminata.</p>
+                <h4 class="point-title">Cascada Escondida</h4>
+                <p class="point-desc">Un rincón natural escondido entre el bosque.</p>
             </div>
         </div>
     </section>
 
-    <!-- Presupuesto -->
     <section class="section budget-section">
-        <h2 class="section-title">💰 ¿Cuánta lana se va?</h2>
-        <p style="text-align: center; font-size: 1.1rem; margin-bottom: 30px;">
-            Aquí está el breakdown para que vayas juntando tus morlacos:
-        </p>
+        <h2 class="section-title">💰 Presupuesto</h2>
         
         <div class="budget-grid">
             <div class="budget-card">
                 <div>🚌 Camión Ida</div>
                 <div class="price">$21</div>
-                <div class="price-label">Por cabeza</div>
+                <div class="price-label">Por persona</div>
             </div>
             
             <div class="budget-card">
                 <div>🚌 Camión Regreso</div>
                 <div class="price">$21</div>
-                <div class="price-label">A Plaza Sendero</div>
+                <div class="price-label">Por persona</div>
             </div>
             
             <div class="budget-card">
                 <div>🌲 Entrada Parque</div>
                 <div class="price">$50</div>
-                <div class="price-label">Solo visita</div>
+                <div class="price-label">Visita</div>
             </div>
             
             <div class="budget-card">
-                <div>⛺ Entrada + Camp</div>
+                <div>⛺ Entrada + Camping</div>
                 <div class="price">$75</div>
-                <div class="price-label">La experiencia completa</div>
+                <div class="price-label">Incluye área para acampar</div>
             </div>
         </div>
 
         <div class="tips-section">
-            <h3 style="font-size: 1.8rem; text-align: center; margin-bottom: 25px;">📝 Tips para no cagarla</h3>
+            <h3 style="font-size: 1.8rem; text-align: center; margin-bottom: 25px;">
+                📝 Recomendaciones
+            </h3>
             
             <div class="tip-item">
-                <div class="tip-title">🍔 Comida</div>
-                <p>Sí hay comida allá pero está medio cara. Mejor tráete tus hamburguesas, hotdogs, maruchan o lo que se te antoje. Si quieres ser chef, lleva tu cazo o sartén.</p>
+                <div class="tip-title">🍽️ Alimentos</div>
+                <p>Se recomienda llevar comida preparada o snacks para mayor comodidad.</p>
             </div>
             
             <div class="tip-item">
-                <div class="tip-title">🏕️ Equipo para Acampar</div>
-                <p><strong>Básico indispensable:</strong> Casa de campaña, saco de dormir o cobijas (hace frío, wey), sleeping pad o colchoneta, linterna o lámpara de cabeza con pilas extra.</p>
-                <p><strong>Para cocinar:</strong> Cazo o sartén, encendedor/cerillos, platos y cubiertos, tu comida (hamburguesas, hotdogs, maruchan, etc).</p>
-                <p><strong>Extras que te salvan:</strong> Ropa térmica, chamarra impermeable, botiquín básico, papel de baño, bolsas para basura.</p>
+                <div class="tip-title">🏕️ Equipo</div>
+                <p>Casa de campaña, cobijas o saco de dormir, linterna y ropa cómoda.</p>
             </div>
-            
-            <div class="tip-item">
-                <div class="tip-title">🍺🌿 Drinks & 420</div>
-                <p>Sí se puede chupar y fumar para los compas 420, pero no sean ojetes: respeten a los demás y recojan TODA su basura. Ni una colilla en el suelo, ¿va?</p>
-            </div>
-        </div>
 
-        <div class="warning">
-            <div class="warning-icon">⚠️</div>
-            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">IMPORTANTE</h3>
-            <p style="font-size: 1.1rem;">
-                La fecha está sujeta a cambios por alertas de clima frío. Vamos en diciembre y hay posibles frentes fríos. Te avisamos si cambia algo, pero mejor estate al pendiente.
-            </p>
+            <div class="tip-item">
+                <div class="tip-title">♻️ Cuidemos el entorno</div>
+                <p>Recolectemos nuestra basura y respetemos las áreas naturales.</p>
+            </div>
         </div>
     </section>
 
     <!-- Ubicaciones -->
-    <section class="section location-section">
-        <h2 class="section-title">📍 ¿De dónde nos vamos y a dónde llegamos?</h2>
-        
-        <div class="locations-grid">
-            <div class="location-card">
-                <h3 class="location-title">🚌 Punto de Salida</h3>
-                <p class="location-desc">Aquí nos juntamos para irnos todos juntos</p>
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1119.571518604899!2d-98.88272144822899!3d19.292161190000513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1ee2cb652325%3A0x38ae95989285d72c!2sCaseta%20chalco%2C%20Autop.%20M%C3%A9xico%20-%20Puebla%2C%20Emiliano%20Zapata%2C%2056535%20Chalco%20de%20D%C3%ADaz%20Covarrubias%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1765831146098!5m2!1ses!2smx"
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-                <p class="location-note">Caseta autopista de chalco</p>
-            </div>
-            
-            <div class="location-card">
-                <h3 class="location-title">🏞️ Parque Dos Aguas</h3>
-                <p class="location-desc">A donde vamos a armarla bien chido</p>
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5328.24582506239!2d-98.74330278502315!3d19.210974272637387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce2485f9ce296b%3A0x674c98d9923f4a5!2sParque%20Dos%20Aguas!5e0!3m2!1ses!2smx!4v1765828190339!5m2!1ses!2smx"
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-                <p class="location-note">Entrada del parque Dos Aguas</p>
-            </div>
-        </div>
-        
-        <div class="location-info">
-            <p>💡 <strong>Tip:</strong> Guarda las ubicaciones en tu Maps para no perderte el día del viaje</p>
-        </div>
-    </section>
+<section class="section location-section"> <h2 class="section-title">📍 ¿De dónde nos vamos y a dónde llegamos?</h2> <div class="locations-grid"> <div class="location-card"> <h3 class="location-title">🚌 Punto de Salida</h3> <p class="location-desc">Aquí nos juntamos para irnos todos juntos</p> <div class="map-container"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1119.571518604899!2d-98.88272144822899!3d19.292161190000513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1ee2cb652325%3A0x38ae95989285d72c!2sCaseta%20chalco%2C%20Autop.%20M%C3%A9xico%20-%20Puebla%2C%20Emiliano%20Zapata%2C%2056535%20Chalco%20de%20D%C3%ADaz%20Covarrubias%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1765831146098!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe> </div> <p class="location-note">Caseta autopista de chalco</p> </div> <div class="location-card"> <h3 class="location-title">🏞️ Parque Dos Aguas</h3> <p class="location-desc">A donde vamos a armarla bien chido</p> <div class="map-container"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5328.24582506239!2d-98.74330278502315!3d19.210974272637387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce2485f9ce296b%3A0x674c98d9923f4a5!2sParque%20Dos%20Aguas!5e0!3m2!1ses!2smx!4v1765828190339!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe> </div> <p class="location-note">Entrada del parque Dos Aguas</p> </div> </div> <div class="location-info"> <p>💡 <strong>Tip:</strong> Guarda las ubicaciones en tu Maps para no perderte el día del viaje</p> </div> </section>
 
-    <!-- DJ Tapia Section -->
+    <!-- Video recuerdo -->
     <section class="section dj-section">
-        <h2 class="section-title">🎧 DJ Tapia en Nexcolanco 🔥</h2>
-        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 30px;">
-            El compa Tapia nos va a prender con su set. Échale un ojo a lo que nos espera:
-        </p>
+        <h2 class="section-title">🎥 Un vistazo a la experiencia</h2>
         <div class="dj-video-wrapper">
             <video controls class="main-video">
                 <source src="assets/tapis.mp4" type="video/mp4">
                 Tu navegador no soporta el video.
             </video>
         </div>
-        <p style="text-align: center; font-size: 1.1rem; margin-top: 20px; opacity: 0.9;">
-            Esto va a estar de poca madre en Nexcolanco, no te lo puedes perder 🎵
-        </p>
     </section>
 
     <!-- Call to Action -->
     <div class="cta-container section">
-        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">¿Ya estás listo para la aventura? 🚀</h2>
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">
+            Celebremos juntos el cumpleaños de Monse 🎉
+        </h2>
         <p style="font-size: 1.3rem; margin-bottom: 30px;">
-            Llena la encuesta para confirmar que vas y qué traes
+            Confirma tu asistencia y prepárate para un fin de semana especial.
         </p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScvsy7hEu-ce2hTStgAQler9XThFHSqU0QQjg86_AKKmyWyAA/viewform?usp=header" class="cta-button">¡Me apunto! 🔥</a>
-        
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScvsy7hEu-ce2hTStgAQler9XThFHSqU0QQjg86_AKKmyWyAA/viewform?usp=header" class="cta-button">
+            Confirmar asistencia
+        </a>
+
         <div style="margin-top: 40px;">
             <p style="font-size: 1.2rem; margin-bottom: 20px;">
-                ¿Ya te registraste? Únete al grupo de WhatsApp
+                Únete al grupo para mantenernos organizados
             </p>
             <a href="https://chat.whatsapp.com/KG68jOxcVCkHHH6VaPyNxB" class="whatsapp-button">
-                <span class="whatsapp-icon">💬</span>
-                Grupo de WhatsApp
+                💬 Grupo de WhatsApp
             </a>
         </div>
     </div>
 
+    <!-- Canvas para luciérnagas -->
+    <canvas id="fireflies-canvas" style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 9999;
+    "></canvas>
+
     <script>
+    // =============================================
+    //   🌟 EFECTO LUCIÉRNAGAS
+    // =============================================
+    (function() {
+        const canvas = document.getElementById('fireflies-canvas');
+        const ctx = canvas.getContext('2d');
+
+        let W = canvas.width  = window.innerWidth;
+        let H = canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', () => {
+            W = canvas.width  = window.innerWidth;
+            H = canvas.height = window.innerHeight;
+        });
+
+        const NUM = 55; // cantidad de luciérnagas
+        const fireflies = [];
+
+        class Firefly {
+            constructor() { this.reset(true); }
+
+            reset(initial) {
+                // Posición aleatoria en toda la pantalla
+                this.x = Math.random() * W;
+                this.y = initial ? Math.random() * H : (Math.random() > 0.5 ? -10 : H + 10);
+
+                // Radio base de la bolita
+                this.r = 1.5 + Math.random() * 2.2;
+
+                // Velocidad muy lenta y elegante
+                const speed = 0.18 + Math.random() * 0.32;
+                const angle = Math.random() * Math.PI * 2;
+                this.vx = Math.cos(angle) * speed;
+                this.vy = Math.sin(angle) * speed;
+
+                // Deriva suave: cada luciérnaga "flota" un poco de forma única
+                this.wobbleX = (Math.random() - 0.5) * 0.008;
+                this.wobbleY = (Math.random() - 0.5) * 0.008;
+                this.wobbleAmp  = 0.3 + Math.random() * 0.5;
+                this.wobbleFreq = 0.002 + Math.random() * 0.004;
+                this.wobbleOff  = Math.random() * Math.PI * 2;
+
+                // Parpadeo independiente para cada luciérnaga
+                this.flickerSpeed = 0.015 + Math.random() * 0.035;
+                this.flickerOff   = Math.random() * Math.PI * 2;
+                this.flickerMin   = 0.1 + Math.random() * 0.3;  // opacidad mínima
+                this.flickerMax   = 0.7 + Math.random() * 0.3;  // opacidad máxima
+
+                // Tono de color: verde-amarillo cálido (típico de luciérnaga)
+                const hue = 60 + Math.random() * 40; // 60-100: amarillo a verde-amarillo
+                this.color = `hsl(${hue}, 100%, 72%)`;
+                this.glowColor = `hsl(${hue}, 100%, 55%)`;
+
+                this.t = 0;
+                this.life = 0;
+            }
+
+            update() {
+                this.t++;
+                this.life++;
+
+                // Movimiento base
+                this.x += this.vx;
+                this.y += this.vy;
+
+                // Suave deriva sinusoidal (flotamiento gracioso)
+                this.vx += this.wobbleX + Math.sin(this.t * this.wobbleFreq + this.wobbleOff) * 0.0015;
+                this.vy += this.wobbleY + Math.cos(this.t * this.wobbleFreq * 0.7 + this.wobbleOff) * 0.0015;
+
+                // Limitar velocidad máxima
+                const spd = Math.hypot(this.vx, this.vy);
+                if (spd > 0.55) { this.vx *= 0.97; this.vy *= 0.97; }
+
+                // Opacidad parpadeante
+                this.alpha = this.flickerMin +
+                    (this.flickerMax - this.flickerMin) *
+                    (0.5 + 0.5 * Math.sin(this.t * this.flickerSpeed + this.flickerOff));
+
+                // Reiniciar si sale de pantalla
+                if (this.x < -20 || this.x > W + 20 || this.y < -20 || this.y > H + 20) {
+                    this.reset(false);
+                }
+            }
+
+            draw() {
+                ctx.save();
+                ctx.globalAlpha = this.alpha;
+
+                // Halo exterior difuso
+                const outerGlow = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.r * 8);
+                outerGlow.addColorStop(0, this.glowColor.replace(')', ', 0.18)').replace('hsl', 'hsla'));
+                outerGlow.addColorStop(1, 'transparent');
+                ctx.fillStyle = outerGlow;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.r * 8, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Halo medio
+                const midGlow = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.r * 3.5);
+                midGlow.addColorStop(0, this.color.replace(')', ', 0.55)').replace('hsl', 'hsla'));
+                midGlow.addColorStop(1, 'transparent');
+                ctx.fillStyle = midGlow;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.r * 3.5, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Núcleo luminoso
+                const core = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.r);
+                core.addColorStop(0, '#ffffff');
+                core.addColorStop(0.4, this.color);
+                core.addColorStop(1, 'transparent');
+                ctx.fillStyle = core;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+                ctx.fill();
+
+                ctx.restore();
+            }
+        }
+
+        // Crear luciérnagas
+        for (let i = 0; i < NUM; i++) fireflies.push(new Firefly());
+
+        // Loop de animación
+        function loop() {
+            ctx.clearRect(0, 0, W, H);
+            for (const f of fireflies) { f.update(); f.draw(); }
+            requestAnimationFrame(loop);
+        }
+        loop();
+    })();
+    // =============================================
+
         // Carrusel de imágenes
         let currentSlide = 0;
         const slides = document.querySelectorAll('.carousel-img');
